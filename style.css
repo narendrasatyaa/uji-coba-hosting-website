@@ -1,0 +1,386 @@
+    /* Posisikan ke tengah */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Iansui&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #f8f9fa;
+        color: #212529;
+        line-height: 1.6;
+        padding-top: 6px;
+    }
+    
+    .navbar {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 5%;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+        height: 60px;
+        z-index: 1000;
+    }
+    
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+    
+    .nav-item {
+        margin-right: 2rem;
+        font-weight: bold;
+    }
+    
+    .nav-item a {
+        text-decoration: none;
+        color: #212529;
+    }
+    
+    .nav-item a:hover {
+        color: #007bff;
+        transform: scale(1.1);
+    }
+    
+    .download-btn {
+        display: inline-block;
+        background-color: #000;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .download-btn:hover {
+        color: #f8f9fa;
+        background-color: #0073b1;
+        transform: scale(1.1);
+    }
+    
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 10%;
+        margin-top: 70px;
+    }
+    
+    .hero-image {
+        width: 50%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
+    .contact-btn {
+        display: inline-block;
+        background-color: #000;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .contact-btn:hover {
+        color: #f8f9fa;
+        background-color: burlywood;
+        transform: scale(1.1);
+    }
+    
+    .btn-social {
+        display: inline-block;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 1rem;
+        gap: 1rem;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .btn-social a:hover {
+        color: steelblue;
+        transform: scale(1.1);
+    }
+    
+    .hero-image {
+        max-width: 40%;
+        border-radius: 50%;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+    .hero p {
+        font-size: 20px;
+    }
+    
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 10%;
+        margin-top: 70px;
+    }
+    
+    .about h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .about p {
+        font-size: 20px;
+    }
+    
+    .experience {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    
+    .experience-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .experience-card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        flex: 1 1 calc(50% - 20px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        max-width: 500px;
+    }
+    
+    .experience-logo {
+        width: 80px;
+        height: 80px;
+        margin-right: 1.5rem;
+    }
+    
+    .experience-date {
+        color: #6c757d;
+        margin-bottom: 0.5rem;
+        margin: 0;
+    }
+    
+    .experience-title {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+        margin: 0;
+    }
+    
+    .experience-company {
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    .projects {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        margin-top: 70px;
+        flex: 1;
+    }
+    
+    .projects-card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .projects-title {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .projects-logo {
+        width: 300px;
+        height: 200px;
+        margin-right: 1.5rem;
+        border-radius: 12px;
+    }
+    
+    .projects h2 {
+        font-size: 30px;
+        font-size: bold;
+        margin-bottom: 10px;
+    }
+    
+    .projects p {
+        font-size: 20px;
+    }
+    
+    .projects-detail {
+        text-align: left;
+        flex: 1;
+    }
+    
+    .view-btn {
+        display: inline-block;
+        background-color: #000;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+    
+    .contact {
+        text-align: center;
+        padding: 50px 20px;
+        background: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 50px auto;
+        flex: 1;
+        margin-top: 100px;
+    }
+    
+    .contact h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .contact p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 15px;
+    }
+    
+    .contact a {
+        color: #0073b1;
+        /* Warna LinkedIn */
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .contact a:hover {
+        color: #005582;
+    }
+    
+    .qr-code {
+        margin: 20px 0;
+    }
+    
+    .qr-code img {
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .qr-code img:hover {
+        transform: scale(1.1);
+    }
+    
+    .social-links a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: background 0.3s, transform 0.3s ease-in-out;
+    }
+    
+    .social-links a[href*="linkedin"] {
+        background: #0073b1;
+        color: white;
+    }
+    
+    .social-links a[href*="github"] {
+        background: #333;
+        color: white;
+    }
+    
+    .social-links a[href*="instagram"] {
+        background: #0073b1;
+        color: white;
+    }
+    
+    .social-links a:hover {
+        transform: translateY(-3px);
+    }
+    
+    @media screen and (max-width: 768px) {
+        .nav-links {
+            display: none;
+            /* Sembunyikan menu default di layar kecil */
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            /* Sesuaikan agar tidak menutupi navbar */
+            left: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-links.active {
+            display: flex;
+            /* Tampilkan saat tombol menu diklik */
+        }
+        .nav-item {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .menu-toggle {
+            display: block;
+            /* Tampilkan tombol menu */
+            font-size: 24px;
+            cursor: pointer;
+        }
+    }
+    
+    @media screen and (min-width: 769px) {
+        .menu-toggle {
+            display: none;
+            /* Sembunyikan tombol menu di layar besar */
+        }
+    }
+    
+    .footer {
+        background: #aaaa;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        padding: 1rem;
+    }

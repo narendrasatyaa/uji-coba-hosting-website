@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Profile | Narendra Satya Adikurniawan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="nav-links">
+            <div class="nav-item"><a href="index.html">Home</a></div>
+            <div class="nav-item"><a href="#about">About</a></div>
+            <div class="nav-item"><a href="portfolio.html">Portfolio</a></div>
+            <div class="nav-item"><a href="contact.html">Contact</a></div>
+        </div>
+        <a href="https://drive.google.com/file/d/1RmPzG2GXaGSdyvybenMM5LIzF7xBk36t/view?usp=sharing" class="download-btn">Download CV</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hi, Aku Narendra!</h1>
+            <p>Frontend Development & UI/UX Design Enthusiast </p>
+            <a href="contact.html" class="contact-btn">Contact Info!</a>
+
+            <div class="btn-social">
+                <a href="https://www.instagram.com/narenvisuals_"><i class="ph-bold ph-instagram-logo"></i></a>
+                <a href="https://id.linkedin.com/in/narendra-satya-adikurniawan"><i class="ph-bold ph-linkedin-logo"></i></a>
+                <a href="https://www.github.com/narendrasatyaa"><i class="ph-bold ph-github-logo"></i></a>
+                <a href="#"><i class="ph-bold ph-gmail-logo"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="./asset/fotosaya1.jpg" alt="Foto Profile">
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me!<i class="ph-bold ph-hand-waving"></i></h2>
+        <p>As a beginner programmer with an interest in web development and design, I was born in Kudus in May 2005. I am currently pursuing a Bachelor’s degree in Informatics Engineering at Muhammadiyah University of Surakarta. I am disciplined, honest,
+            confident, persistent, goal-oriented, and possess strong public speaking skills.</p>
+    </section>
+    <section class="experience">
+        <h2>My Experience <i class="ph ph-briefcase"></i> </h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <img src="./asset/logoums.png" alt="logo-ums" class="experience-logo">
+                <div class="experience-detail">
+                    <h3 class="experience-title">Programming Algorithm Laboratory Assistant</h3>
+                    <p class="experience-date">Sep 2024 - Jan 2025</p>
+                    <p class="experience-company">Universitas Muhammadiyah Surakarta</p>
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="./asset/logohima.png" alt="logo-himatif" class="experience-logo">
+                <div class="experience-detail">
+                    <h3 class="experience-title">Head of Science and Research</h3>
+                    <p class="experience-date">Jan 2025 - Present</p>
+                    <p class="experience-company">Himpunan Mahasiswa Teknik Informatika</p>
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="./asset/logohima.png" alt="logo-himatif" class="experience-logo">
+                <div class="experience-detail">
+                    <h3 class="experience-title">Staff of Science and Research</h3>
+                    <p class="experience-date">Jan 2024 - Dec 2024</p>
+                    <p class="experience-company">Himpunan Mahasiswa Teknik Informatika</p>
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="./asset/logofosti.png" alt="logo-fosti" class="experience-logo">
+                <div class="experience-detail">
+                    <h3 class="experience-title">Staff of the Science and Technology Research</h3>
+                    <p class="experience-date">Jan 2024 - Present</p>
+                    <p class="experience-company">Forum Open Source Teknik Informatika</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Narendra Satya Adikurniawan. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

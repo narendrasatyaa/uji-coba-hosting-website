@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Portfolio | Narendra Satya Adikurniawan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="nav-links">
+            <div class="nav-item"><a href="index.html">Home</a></div>
+            <div class="nav-item"><a href="#about">About</a></div>
+            <div class="nav-item"><a href="portfolio.html">Portfolio</a></div>
+            <div class="nav-item"><a href="contact.html">Contact</a></div>
+        </div>
+        <a href="https://drive.google.com/file/d/1RmPzG2GXaGSdyvybenMM5LIzF7xBk36t/view?usp=sharing" class="download-btn">Download CV</a>
+    </nav>
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>Email me at: <a href="mailto:narendra.adikurniawan@gmail.com">narendra.adikurniawan@gmail.com</a></p>
+        <strong><p>Scan This QR for Chat!</p></strong>
+
+        <div class="qr-code">
+            <!-- <img src="./asset/profile_qr.png" alt=""> -->
+            <img src="./asset/profile_qr.png" alt="scan-to-chat">
+        </div>
+
+        <p>Or connect via:</p>
+        <div class="social-links">
+            <a href="https://id.linkedin.com/in/narendra-satya-adikurniawan">LinkedIn</a>
+            <a href="https://www.github.com/narendrasatyaa">GitHub</a>
+            <a href="https://www.instagram.com/narenvisuals_">Instagram</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Narendra Satya Adikurniawan. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
