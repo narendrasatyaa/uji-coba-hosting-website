@@ -1,3 +1,5 @@
+    /* Posisikan ke tengah */
+    
     @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Iansui&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
     * {
         margin: 0;
@@ -13,12 +15,14 @@
     }
     
     .navbar {
+        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0.5rem 5%;
         background-color: white;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
         width: 100%;
         height: 60px;
         z-index: 1000;
@@ -53,7 +57,6 @@
         text-decoration: none;
         font-weight: bold;
         transition: transform 0.3s ease-in-out;
-        white-space: nowrap;
     }
     
     .download-btn:hover {
@@ -256,6 +259,86 @@
         margin-top: 1rem;
     }
     
+    .contact {
+        text-align: center;
+        padding: 50px 20px;
+        background: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 50px auto;
+        flex: 1;
+        margin-top: 100px;
+    }
+    
+    .contact h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .contact p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 15px;
+    }
+    
+    .contact a {
+        color: #0073b1;
+        /* Warna LinkedIn */
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .contact a:hover {
+        color: #005582;
+    }
+    
+    .qr-code {
+        margin: 20px 0;
+    }
+    
+    .qr-code img {
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .qr-code img:hover {
+        transform: scale(1.1);
+    }
+    
+    .social-links a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: background 0.3s, transform 0.3s ease-in-out;
+    }
+    
+    .social-links a[href*="linkedin"] {
+        background: #0073b1;
+        color: white;
+    }
+    
+    .social-links a[href*="github"] {
+        background: #333;
+        color: white;
+    }
+    
+    .social-links a[href*="instagram"] {
+        background: #0073b1;
+        color: white;
+    }
+    
+    .social-links a:hover {
+        transform: translateY(-3px);
+    }
+    
     @media screen and (max-width: 768px) {
         .nav-links {
             display: none;
@@ -338,4 +421,14 @@
         .menu-toggle {
             display: none;
         }
+    }
+    
+    .footer {
+        background: #aaaa;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        text-align: center;
+        padding: 1rem;
     }
