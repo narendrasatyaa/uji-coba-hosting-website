@@ -359,6 +359,14 @@
             font-size: 24px;
             cursor: pointer;
         }
+         .experience-container {
+        padding: 0 5%;
+    }
+
+    .experience-card {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
         .projects-card {
             flex-direction: column;
             align-items: center;
