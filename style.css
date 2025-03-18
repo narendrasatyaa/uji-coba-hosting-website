@@ -1,16 +1,17 @@
-    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Iansui&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        background-color: #f8f9fa;
-        color: #212529;
-        line-height: 1.6;
-        padding-top: 6px;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+    padding-top: 6px;
+    font-family: "Playfair Display", serif;
+}
     
     .navbar {
         position: fixed;
